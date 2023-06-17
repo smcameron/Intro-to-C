@@ -1,7 +1,36 @@
+Mental Model of How a Computer works
+	CPU
+	Registers
+	Memory
+		Bytes
+			Binary
+			Hex
+		Addresses
+		Fetching values by address
+	Machine code
+		instructions
+		Assembly language
+	Stack
+	Heap
+Compiler
+	gcc
+	clang
+	-Wall -Wextra
+	-o
+	-g
+	-fsanitize=address
+	-fsanitize=undefined
+Makefiles and make
+CMake
 
+C language
+hello world
+	main
+	printf
 variables
 types
 	int
+		stdint.h
 	char
 	float
 	double
@@ -57,7 +86,21 @@ pointers to functions
 typedefs
 	when and when not to use typedefs
 debugging tips
-
+	printf
+		wolf fence
+	compare working system to non-working system
+		git bisect
+	gdb
+		start
+		bt
+		eXtra Awesome mode (aka tui mode)
+		layout
+		breakpoints
+		watchpoints (hw & sw)
+		info threads
+		core files
+			ulimit -c unlimited
+			where does linux hide core files
 buffered i/o:
 	stdin, stdout, stderr,
 	fprintf
@@ -78,13 +121,26 @@ unbuffered i/o
 string functions
 	strlen
 	strcpy
+		strncpy
+		strlcpy
 	strcat
+		strncat
 	strcmp
-	sprintf
+		strncmp
+	snprintf
 	strtok
-	
 
 malloc/free
 
 setjmp/longjmp?
+
+qsort/qsort_r
+	callback functions
+
+modules
+	header files define API
+	c files implement API
+	functions should be static by default unless part of API
+	Avoid global state, prefer to pass it around
+	prefix names
 
